@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="color_intensity <= 3.82\ngini = 0.658\nsamples = 124\nvalue = [40, 50, 34]", fillcolor="#e7fcf0"] ;
+1 [label="ash <= 3.07\ngini = 0.083\nsamples = 46\nvalue = [2, 44, 0]", fillcolor="#42e687"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="proline <= 1010.0\ngini = 0.043\nsamples = 45\nvalue = [1, 44, 0]", fillcolor="#3de684"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 44\nvalue = [0, 44, 0]", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0]", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0]", fillcolor="#e58139"] ;
+1 -> 5 ;
+6 [label="flavanoids <= 1.4\ngini = 0.567\nsamples = 78\nvalue = [38, 6, 34]", fillcolor="#fdf4ed"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="gini = 0.0\nsamples = 34\nvalue = [0, 0, 34]", fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label="proline <= 724.5\ngini = 0.236\nsamples = 44\nvalue = [38, 6, 0]", fillcolor="#e99558"] ;
+6 -> 8 ;
+9 [label="malic_acid <= 3.92\ngini = 0.245\nsamples = 7\nvalue = [1, 6, 0]", fillcolor="#5ae996"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 6\nvalue = [0, 6, 0]", fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0]", fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 37\nvalue = [37, 0, 0]", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
